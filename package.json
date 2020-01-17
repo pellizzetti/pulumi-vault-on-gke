@@ -1,0 +1,32 @@
+{
+  "name": "pulumi-vault-on-gke",
+  "private": false,
+  "main": "index.ts",
+  "description": "",
+  "version": "0.0.1",
+  "author": "Guilherme Pellizzetti <guipellizzetti@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@pulumi/gcp": "^2.1.0",
+    "@pulumi/kubernetes": "^1.4.1",
+    "@pulumi/pulumi": "^1.8.1",
+    "@pulumi/random": "^1.4.0",
+    "@pulumi/tls": "^1.2.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.0",
+    "@types/uuid": "^3.4.6",
+    "@typescript-eslint/eslint-plugin": "^2.16.0",
+    "@typescript-eslint/parser": "^2.16.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.3"
+  }
+}
