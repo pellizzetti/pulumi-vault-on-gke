@@ -117,8 +117,8 @@ deployToCluster({
 export const kubeconfig = k8sConfig;
 export const decryptRootToken = pulumi.interpolate`gsutil cat gs://${bucket.name}/root-token.enc | base64 --decode | gcloud kms decrypt --key ${cryptoKey.selfLink} --ciphertext-file - --plaintext-file - | sed -E "s/%|#$//"`;
 export const vaultLoadBalancerIpAddress = loadBalancerIp.address;
-export const vaultEnv = pulumi.interpolate`export VAULT_ADDR="https://$(pulumi stack output vaultLoadBalancerIpAddress)";
+export const vaultEnv = pulumi.interpolate`export VAULT_ADDR="https://$(pulumi stack output vaultLoadBalancerIpAddress --show-secrets)";
 export VAULT_TOKEN=$(${decryptRootToken});
-export VAULT_CAPATH="$(pwd)/vault/tls/vault-ca.pem";
+export VAULT_CAPATH="$(pwd)/tls/vault-ca.pem";
 # Run this command to configure your shell:
 # eval $(pulumi stack output vaultEnv)`;
