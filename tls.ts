@@ -46,7 +46,7 @@ export default function createTls(
     new provisioner.SaveToFile(
       'vault-ca-stf',
       {
-        path: './vault/tls/vault-ca.pem',
+        path: './tls/vault-ca.pem',
         content: selfSignedCa.certPem,
         permission: '0600',
       },
@@ -98,7 +98,7 @@ export default function createTls(
     new provisioner.SaveToFile(
       'vault-signed-cert-stf',
       {
-        path: './vault/tls/vault.pem',
+        path: './tls/vault.pem',
         content: locallySignedCert.certPem,
       },
       { dependsOn: locallySignedCert }
@@ -108,7 +108,7 @@ export default function createTls(
     new provisioner.SaveToFile(
       'vault-self-signed-ca-stf',
       {
-        path: './vault/tls/vault.pem',
+        path: './tls/vault.pem',
         content: selfSignedCa.certPem,
         append: true,
         permission: '0600',
