@@ -181,3 +181,5 @@ The default allowed CIDR is `0.0.0.0/0 (anyone)`. **You should restrict this CID
 [gcs]: https://cloud.google.com/storage
 [kms]: https://cloud.google.com/kms
 [stackdriver]: https://cloud.google.com/stackdriver/
+[vault-gcp-auth]: https://www.vaultproject.io/docs/auth/gcp.html
+[vault-gcp-secrets]: https://www.vaultproject.io/docs/secrets/gcp/index.html
