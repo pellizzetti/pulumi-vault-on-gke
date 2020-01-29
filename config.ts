@@ -8,7 +8,6 @@ export * from './config/network';
 export * from './config/k8s';
 export * from './config/vault';
 
-//const config = new pulumi.Config();
 const configGCP = new pulumi.Config('gcp');
 
 /**
