@@ -11,7 +11,7 @@
 
 ### `Const` project
 
-• **project**: *string* = config.get('project') || ''
+• **project**: *string* = configGCP.get('project') || ''
 
 Defined in config.ts:17
 
@@ -23,7 +23,7 @@ ___
 
 ### `Const` region
 
-• **region**: *string* = config.get('project') || 'us-east1'
+• **region**: *string* = configGCP.get('project') || 'us-east1'
 
 Defined in config.ts:23
 
