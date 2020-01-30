@@ -1,4 +1,4 @@
-[pulumi-vault-on-gke - v0.0.1](../../README.md) › [Config](../README.md) › ["serviceAccount"](_serviceaccount_.md)
+[pulumi-vault-on-gke - v0.0.2](../../README.md) › [Config](../README.md) › ["serviceAccount"](_serviceaccount_.md)
 
 # Config module: "serviceAccount"
 

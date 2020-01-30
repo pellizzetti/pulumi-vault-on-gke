@@ -1,4 +1,4 @@
-[pulumi-vault-on-gke - v0.0.1](../../README.md) › [Config](../README.md) › ["network"](../modules/_network_.md) › [CidrBlock](_network_.cidrblock.md)
+[pulumi-vault-on-gke - v0.0.2](../../README.md) › [Config](../README.md) › ["network"](../modules/_network_.md) › [CidrBlock](_network_.cidrblock.md)
 
 # Interface: CidrBlock
 

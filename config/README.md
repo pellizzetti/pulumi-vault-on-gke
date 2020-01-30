@@ -1,6 +1,6 @@
-[pulumi-vault-on-gke - v0.0.1](../README.md) › [Config](README.md)
+[pulumi-vault-on-gke - v0.0.2](../README.md) › [Config](README.md)
 
-# pulumi-vault-on-gke - v0.0.1
+# pulumi-vault-on-gke - v0.0.2
 
 ### Config modules
 
