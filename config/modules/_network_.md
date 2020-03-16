@@ -1,4 +1,4 @@
-[pulumi-vault-on-gke - v0.0.2](../../README.md) › [Config](../README.md) › ["network"](_network_.md)
+[pulumi-vault-on-gke - v0.0.3](../../README.md) › [Config](../README.md) › ["network"](_network_.md)
 
 # Config module: "network"
 
@@ -13,6 +13,7 @@
 * [kubernetesNetworkIpv4Cidr](_network_.md#const-kubernetesnetworkipv4cidr)
 * [kubernetesPodsIpv4Cidr](_network_.md#const-kubernetespodsipv4cidr)
 * [kubernetesServicesIpv4Cidr](_network_.md#const-kubernetesservicesipv4cidr)
+* [vaultSourceRanges](_network_.md#const-vaultSourceRanges)
 
 ## Variables
 
@@ -86,3 +87,20 @@ Defined in network.ts:28
 IP CIDR block for services. This must be at least /22 and cannot overlap with any other IP CIDR ranges.
 
 **`default`** '10.0.88.0/22'
+
+___
+
+### `Const` vaultSourceRanges
+
+• **vaultSourceRanges**: *string[]* = config.getObject<string[]>(
+  'vaultSourceRanges'
+) || ['0.0.0.0/0'];
+
+Defined in network.ts:67
+
+List of addresses or CIDR blocks which are allowed to connect to the Vault. The default behavior is to allow anyone (0.0.0.0/0) access. You should restrict access to external IPs that need to access the Vault cluster.
+
+**`default`**
+[
+  '0.0.0.0/0'
+]
