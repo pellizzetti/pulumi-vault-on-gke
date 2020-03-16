@@ -21,6 +21,7 @@ import {
   kubernetesLoggingService,
   kubernetesMonitoringService,
   kubernetesSecretsCryptoKey,
+  vaultSourceRanges,
 } from './config';
 
 import createServiceAccount from './serviceAccount';
@@ -112,6 +113,7 @@ deployToCluster({
   bucket,
   keyRing,
   cryptoKey,
+  vaultSourceRanges,
 });
 
 export const kubeconfig = k8sConfig;

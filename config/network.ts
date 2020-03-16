@@ -53,3 +53,17 @@ export const kubernetesMasterAuthorizedNetworks = config.getObject<CidrBlock[]>(
     cidrBlock: '0.0.0.0/0',
   },
 ];
+
+/**
+ * List of addresses or CIDR blocks which are allowed to connect to the Vault.
+ * The default behavior is to allow anyone (0.0.0.0/0) access.
+ * You should restrict access to external IPs that need to access the Vault
+ * cluster.
+ * @default
+ * [
+ *   '0.0.0.0/0'
+ * ]
+ */
+export const vaultSourceRanges = config.getObject<string[]>(
+  'vaultSourceRanges'
+) || ['0.0.0.0/0'];

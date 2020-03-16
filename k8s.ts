@@ -16,6 +16,7 @@ interface VaultNetworkArgs {
   bucket: gcp.storage.Bucket;
   keyRing: gcp.kms.KeyRing;
   cryptoKey: gcp.kms.CryptoKey;
+  vaultSourceRanges: string[];
 }
 
 /**
@@ -59,6 +60,7 @@ export default function deployToCluster(args: VaultNetworkArgs): void {
         spec: {
           type: 'LoadBalancer',
           loadBalancerIP: args.loadBalancerIp.address,
+          loadBalancerSourceRanges: args.vaultSourceRanges,
           externalTrafficPolicy: 'Local',
           selector: {
             app: 'vault',
