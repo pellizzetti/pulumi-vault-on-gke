@@ -1,4 +1,4 @@
-[pulumi-vault-on-gke - v0.0.3](../../README.md) › [Config](../README.md) › ["bucket"](_bucket_.md)
+[pulumi-vault-on-gke - v0.0.4](../../README.md) › [Config](../README.md) › ["bucket"](_bucket_.md)
 
 # Config module: "bucket"
 

@@ -1,4 +1,4 @@
-[pulumi-vault-on-gke - v0.0.3](../../README.md) › [Config](../README.md) › ["network"](_network_.md)
+[pulumi-vault-on-gke - v0.0.4](../../README.md) › [Config](../README.md) › ["network"](_network_.md)
 
 # Config module: "network"
 

@@ -1,4 +1,4 @@
-[pulumi-vault-on-gke - v0.0.3](../../README.md) › [Config](../README.md) › ["k8s"](_k8s_.md)
+[pulumi-vault-on-gke - v0.0.4](../../README.md) › [Config](../README.md) › ["k8s"](_k8s_.md)
 
 # Config module: "k8s"
 

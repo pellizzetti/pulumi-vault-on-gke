@@ -3,7 +3,7 @@
   "private": false,
   "main": "index.ts",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "author": "Guilherme Pellizzetti <guipellizzetti@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -28,5 +28,8 @@
     "prettier": "^1.19.1",
     "tslint": "^5.20.1",
     "typescript": "^3.7.3"
+  },
+  "resolutions": {
+    "**/**/minimist": "^1.2.3"
   }
 }

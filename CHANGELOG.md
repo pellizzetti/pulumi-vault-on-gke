@@ -2,6 +2,13 @@
 
 All changes to this project will be documented in this file.
 
+## [0.0.4] - 2020-03-23
+
+### Bumped
+- [minimist](https://github.com/substack/minimist) to **1.2.3**.
+  - [Release notes](https://github.com/substack/minimist/releases)
+  - [Commits](substack/minimist@1.2.3)
+
 ## [0.0.3] - 2020-03-16
 ### Added
 - Allows control of which hosts can connect to the Vault LB
